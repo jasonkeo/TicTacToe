@@ -33,7 +33,7 @@ export default function Tictac() {
 
     return (
         <div style={{textAlign: 'center'}}>
-            <h1>Current Player: {currentPlayer ? "O": "X"}</h1>
+           <h1>Current Player: {currentPlayer ? "X": "O"}</h1>
             <div className="board">
 
                 <Square value={board[0]} index="0" Click={Click} />
@@ -49,7 +49,7 @@ export default function Tictac() {
                 <Square value={board[8]} index="8" Click={Click} />
             </div>
 
-            <button onClick={setBoard([null, null, null, null, null, null, null, null, null])}>Reset</button>
+            <button id="btn" onClick={() => {setBoard([null, null, null, null, null, null, null, null, null])}}>Reset</button>
         </div>
 
        
