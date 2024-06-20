@@ -28,3 +28,10 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
+
+#btn {
+  padding: 3px 20px;
+  margin: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
